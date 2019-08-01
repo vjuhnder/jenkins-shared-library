@@ -13,5 +13,5 @@ def call(String buildResult) {
   else {
     slackSend color: "danger", message: "Job: ${env.JOB_NAME} with buildnumber ${env.BUILD_DISPLAY_NAME} ${env.BUILD_URL} its result was unclear"	
   }
-  echo env.COMMITTER
+  
 }
